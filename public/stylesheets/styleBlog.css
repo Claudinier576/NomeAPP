@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Valorant";
+    src: url("../fonts/VALORANT.woff");
+}
+body{
+    font-family: "Valorant";
+    background: #e0e2e4;
+}
+#conteiner{
+    margin: 0 auto;
+    width: 1024px;
+}
+h3{
+   font-size: 24px ; 
+}
+
+/*
+    inicio HEADER
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 100px;
+    background: url(../images/fundo-menu.png) repeat-x;
+;
+}
+
+.social-networks{
+    font-size: 10px;
+    width: 110px;
+    height: 70px;
+    position: relative;
+    left: 914px;
+    top: -35px;
+}
+
+#logo{
+    
+    position: relative;
+    top: 38px;
+}
+
+#menu-bar{
+
+    top: -36px;
+    height: 29px;
+    position: relative;
+    background: url(../images/Forma1.png);
+    padding: 0 25px;
+}
+#menu-bar a{
+    text-decoration: none;
+    color: #555b61;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#menu-bar a:hover{
+    color: plum;
+}
+#menu-bar ul li{
+    list-style: none;
+    float: left;
+    margin: 0 5px;
+    padding:0 12px 0px;
+    background: url(../images/Divisao.png) no-repeat  right ;
+}
+#menu-bar ul li a{
+    line-height: 30px;
+    font-size: 16px;
+    display: inline-block;
+}
+.limpar{
+    clear: both;
+}
+
+/*
+    Fim HEADER
+*/
+
+.card{
+    background: url(../images/card.png) no-repeat;
+    width: 960px;
+    height: 475px;
+    text-align: center;
+    margin: 0 auto;   
+}
+
+.one{
+    position: relative;
+    left: 75px;
+    top: 58px;
+    width: 830px;
+}
