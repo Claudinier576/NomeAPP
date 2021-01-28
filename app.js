@@ -9,6 +9,8 @@ var usersRouter = require('./routes/users');
 var BlogRouter = require('./routes/Blog');
 var ExpressRouter = require('./routes/Express');
 var GitHubRouter = require('./routes/GitHub');
+var HtmlRoute = require('./routes/Html');
+var CssRoute = require('./routes/Css');
 
 var app = express();
 
@@ -27,6 +29,9 @@ app.use('/users', usersRouter);
 app.use('/Blog', BlogRouter);
 app.use('/Express', ExpressRouter);
 app.use('/GitHub',GitHubRouter);
+app.use('/Html',HtmlRoute);
+app.use('/Css',CssRoute);
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));

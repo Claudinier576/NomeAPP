@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <link rel="stylesheet" href="../stylesheets/styleCss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html</title>
+</head>
+<body>
+    <div id="conteiner">
+
+
+        <header>
+            
+            <a href="./Blog">
+               
+                <img id="logo" src="../images/LOGO.png" alt="">
+                
+            </a>
+                
+                <div class="social-networks">
+                    <a href="https://www.facebook.com/neto.jose.5621/">
+                        <img src="../images/FACE.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/dev_neto/">
+                        <img src="../images/INSTA.png" alt="Instagrm">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UChyQRsV1nqeLDjwsBmMTH3Q">
+                        <img src="../images/YTB.png" alt="Youtube">
+                    </a>
+
+                </div>
+
+                <div id="menu-bar">
+                    <ul>
+                        <li>
+                            <a href="./Express">Comandos-EXPRESS</a>
+                        </li>
+                        <li>
+                            <a href="./GitHub">GITHUB</a>
+                           
+                        </li>
+                        <li>
+                            <a href="./Html">HTLM</a>
+                          
+                        </li>
+                        <li>
+                            <a href="./Css">CSS</a>
+        
+                        </li>
+                        <li>
+                            <a href="">JS</a>
+                            
+                        </li>
+                        <li>
+                            <a href="">SITES-REFERENCIAS</a>
+                            
+                        </li>
+                    </ul>
+
+                </div>
+
+
+        </header>
+        <div class="limpar"></div>
+       
+        <div class="conteudo">
+            <h1>CSS</h1>
+            <p>
+                Aqui mostrarei como foi montado o css da pagina anterior
+            </p>
+            <p>a pagina anterior a Html sem css ficaria assim:</p>
+            <img src="../images/htmlSemCss.png" alt="">
+            <p>
+                para começarmos a montar o css da nossa pagina devemos criar um arquivo css no meu caso colocarei o nome de styleHTML.css
+            </p>
+            <img src="../images/css1.png" alt="styleHtml.css">
+            <p> começamos com o corpo geral que tem o width de 1024px todo o nosso codigo fica na div com class="conteiner" pode colocar o nome que quiser</p>
+            <p> abrimos uma tag < header>< /header> e colocamos os compontes</p>
+            <img src="../images/css2.png" alt="a">
+            <img src="../images/css3.png" alt="">
+            <p>
+                assim vamos ao css, começei importando a fonte usando o @font-face, logo depois adicionei um background pro body(corpo da pagina) e definindo a letra padrao como Valorant(nome da fonte importada)
+            </p>
+            <p>e assim peguei a div pelo id que escoli antes que seria o id container que contem o conteudo da pagina e defini uma largura fixa de 1024px ultilizei o margin
+                para fazer o espaçamento 0 para o topo e baixo e auto para a direita e esquerda assim centralizando o conteudo
+            </p>
+            <img src="../images/css4.png" alt="">
+            <br>
+            <p> Com a base criada podemos avançar para as configuraçoes dos titulos usados e paragragos h3 e p usando o  font-size para definir o tamanho de 24px para a fonte  </p>
+            <p>
+                e usando o *{} selecionamos tudo para fazer uma formataçao padrao para nosso projeto que no caso foi zerar margin e padding
+            </p>
+            <img src="../images/css5.png" alt="">
+            <br>
+            <p>selecionei a tag header(nao precisei colocar uma classe pra ela pois só tera uma header) ajustando uma altura (height) de 100px</p>
+            <p>e coloquei um background de imgagem e cor caso a imagem nao carregar</p>
+            <p>selecionei a tag img geral colocando apenas img{} e coloquei uma largura maxima de 1020px </p>
+            <img src="../images/css6.png" alt="">
+            <p>
+                agora iremos posicionar os links com imagens das redes socias cujo a class é social-networks
+            </p>
+            <p>OBS:top quanto maior mais baixo estara a imagem quanto menor mais alta</p>
+            <p>Coloquei como posiçao relativa para mexer na poscao dele atual assim colocando no canto direito</p>
+            <p>tambem defini uma font seize pra caso nao carregar a imagem ainda mostrar escrito</p>
+            <img src="../images/css7.png" alt="">
+            <br>
+            <p>
+            Assim faltando apenas a barra com links e a posiçao da logo, selecionei o id da logo e defini como posiçao relativa e apenas tive que usar o top para abaixar a logo
+            </p>
+            <p>agora sobre a barra do menu eu selecionei seu id que tem o nome de menu-bar tive que ajustar a altura e o espaçamento interno usando posiçao relativa e padding tambem coloquei uma altura de 29px</p>
+            <img src="../images/css8.png" alt="">
+            <p>ainda sobre a barra do menu alterei os links nela colocando uma cor fixa e tirando as estilização padrao dos links logo dps usei o :hover que verifica quando esta com o mause por cima e coloquei outra cor para dar um destaque</p>
+            <img src="../images/css9.png" alt="">
+            <p>ainda sobre as barras selecionei os itens da barra para colocar eles de forma que flutuacem a esquerda por isso usei o float:left(caso quiser colocar para flutuar a direita basta usar float:right) ajustei a margin(espaçamento externo) e o padding(espaçamento interno) coloquei uma imagem de fundo posicionada na direita para fazer a divisão dos links </p>
+            <p>
+                depois selecionei os links novamete coloquei  um tamanho que me agradou de 16px e a altura da linha coloquei de 30px para ficar alinhado no centro da barra por fim coloquei o displey de inline-block para ocupar o espaçamento que queria por fim criei uma div e coloquei a classe de limpar para remover o float left dos proximos elementos/tags
+            </p>
+            <img src="../images/css10.png" alt="">
+            <br>
+            <p>
+                por criei e  selecionei as classes card para trocar a fonte somente dentro dos cards
+                colquei uma borda e uma border-radius para arredondar a borda ajustei os espaçamentos internos e externos e um fundo de outra cor para destacar
+                selecionei as imagens dentro do card e coloquei a mesma borda e arredondei de forma igual ao proprio card
+            </p>
+            <img src="" alt="">
+            <img src="../images/css12.png" alt="">
+            <img src="../images/css11.png" alt="">
+            <br>
+            <br>
+
+            <p>
+                assim deixando a pagina da forma que esta < 3
+            </p>
+            <img src="../images/htmlComCss.png" alt="">
+        </div>
+
+
+    </div>
+</body>
+</html>

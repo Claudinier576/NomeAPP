@@ -9,21 +9,25 @@ body{
 #conteiner{
     margin: 0 auto;
     width: 1024px;
+    
 }
 h3,p{
    font-size: 24px ; 
 }
-/*
-    inicio HEADER
-*/
 *{
     margin: 0;
     padding: 0;
 }
+/*
+    inicio HEADER
+*/
+
 header{
     height: 100px;
     background: url(../images/fundo-menu.png) repeat-x;
-;
+}
+img{
+    max-width: 1020px;
 }
 
 .social-networks{
@@ -78,13 +82,17 @@ header{
 /*
     Fim HEADER
 */
-.red{
-    color: red;
+
+
+.card{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 15px 0;
+    padding: 20px;
+    background: #555b61;
 }
-.first-steps{
-    text-align: center;
-}
-.first-steps img{
+.card img{
     border: 3px solid black;
     border-radius: 15px;
 }
